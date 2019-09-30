@@ -42,3 +42,21 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let navItem = document.getElementsByTagName('a');
+navItem[0].textContent = "Services"
+navItem[1].textContent = "Product"
+navItem[2].textContent = "Vision"
+navItem[3].textContent = "Features"
+navItem[4].textContent = "About"
+navItem[5].textContent = "Contact"
+
+let ctaH1 = document.querySelector('.cta-text h1')
+ctaH1.textContent = (`Dom Is Awesome`);
+
+let ctaButton = document.querySelector('.cta-text button')
+ctaButton.textContent = (`Get Started`);
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
