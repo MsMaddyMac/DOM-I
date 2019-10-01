@@ -132,3 +132,11 @@ const contactText3 = document.querySelectorAll(".contact p")[2];
 contactText3.textContent = siteContent["contact"]["email"]
 
 // -------- End of Contact Section ---------- //
+
+
+// ----------- Footer Section ------------- //
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"]
+
+// ----------- End of Footer Section ------------- //
