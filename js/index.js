@@ -51,6 +51,23 @@ navItem[3].textContent = siteContent["nav"]["nav-item-4"]
 navItem[4].textContent = siteContent["nav"]["nav-item-5"]
 navItem[5].textContent = siteContent["nav"]["nav-item-6"]
 
+Array.from(navItem).forEach(links => {
+  links.style.color = "green";
+})
+
+let newLink = document.querySelector('nav');
+let newNavLink1 = document.createElement('a')
+newNavLink1.textContent = "Tech";
+newNavLink1.style.color = "green";
+newLink.appendChild(newNavLink1);
+
+let newNavLink2 = document.createElement('a')
+newNavLink2.textContent = "Create";
+newNavLink2.style.color = "green";
+newLink.prepend(newNavLink2);
+
+
+
 // -------End of Header Section------ //
 
 
